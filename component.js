@@ -120,7 +120,8 @@ define('ui/components/machine/driver-profitbricks/component',
           diskType: '"Disk type" is required',
           image: '"Image" is required',
           location: '"Location" is required',
-          ram: '"RAM" is required'
+          ram: '"RAM" is required',
+          name: '"Name" is required'
         },
         valid = true;
 
