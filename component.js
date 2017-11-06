@@ -120,8 +120,7 @@ define('ui/components/machine/driver-profitbricks/component',
           diskType: '"Disk type" is required',
           image: '"Image" is required',
           location: '"Location" is required',
-          ram: '"RAM" is required',
-          name: '"Name" is required'
+          ram: '"RAM" is required'
         },
         valid = true;
 
@@ -132,8 +131,10 @@ define('ui/components/machine/driver-profitbricks/component',
       }
     });
 
-      if (!valid || errors)
+      if (!valid || (errors && errors.length>0)){
         this.set('errors', errors);
+        return false;
+      }
       return valid;
     },
     willDestroyElement() {
