@@ -132,7 +132,7 @@ define('ui/components/machine/driver-profitbricks/component',
       }
     });
 
-      if (!valid)
+      if (!valid || errors)
         this.set('errors', errors);
       return valid;
     },
