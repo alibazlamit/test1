@@ -18,7 +18,7 @@ define('ui/components/machine/driver-profitbricks/component',
     var defaultCores="2";
 
     const VALID_IMAGES = [
-      'centOS-7',
+      //'centOS-7',
       //'debian-7',
       'debian-8',
       //'debian-9',
